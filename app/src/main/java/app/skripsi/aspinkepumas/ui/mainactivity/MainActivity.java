@@ -1,10 +1,12 @@
-package app.skripsi.aspinkepumas;
+package app.skripsi.aspinkepumas.ui.mainactivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import app.skripsi.aspinkepumas.R;
 import app.skripsi.aspinkepumas.session.SessionManager;
 import app.skripsi.aspinkepumas.ui.aboutactivity.AboutActivity;
 import app.skripsi.aspinkepumas.ui.grafik.GrafikActivity;
+import app.skripsi.aspinkepumas.ui.kuisioner.KuisionerActivity;
 import app.skripsi.aspinkepumas.ui.login.LoginActivity;
 
 import android.content.Intent;
@@ -40,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent ii = new Intent(getApplicationContext(), GrafikActivity.class);
                 startActivity(ii);
 
+            }
+        });
+
+        CardView kuisioner = findViewById(R.id.cv_survey);
+        kuisioner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iiii = new Intent(getApplicationContext(), KuisionerActivity.class);
+                startActivity(iiii);
             }
         });
 

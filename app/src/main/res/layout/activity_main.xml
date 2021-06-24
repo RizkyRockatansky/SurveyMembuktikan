@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ss2"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.mainactivity.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -61,8 +61,71 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
+<!--        <GridLayout-->
+<!--            android:layout_marginTop="130dp"-->
+<!--            android:id="@+id/GL_countsurvey"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:alignmentMode="alignMargins"-->
+<!--            android:columnCount="1"-->
+<!--            android:columnOrderPreserved="false"-->
+<!--            android:rowCount="1">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cv_profile"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                android:clickable="true"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                android:layout_margin="12dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="90dp"-->
+<!--                    android:layout_marginLeft="270dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_height="90dp"-->
+<!--                    android:src="@drawable/groups"/>-->
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/font1"-->
+<!--                        android:text="Jumlah Mahasiswa Yang Telah Mengisi Kuisioner"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="15sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/count_kuisioner"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:text="501"-->
+<!--                        android:fontFamily="@font/font1"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="46sp" />-->
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </GridLayout>-->
+
+
+
         <GridLayout
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="180dp"
             android:id="@+id/GL1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -1,8 +1,7 @@
 package app.skripsi.aspinkepumas.ui.splashscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
-import app.skripsi.aspinkepumas.MainActivity;
-import app.skripsi.aspinkepumas.ui.login.LoginActivity;
+import app.skripsi.aspinkepumas.ui.mainactivity.MainActivity;
 import app.skripsi.aspinkepumas.R;
 
 import android.content.Intent;

@@ -126,6 +126,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/splashcolor"
             android:layout_gravity="center"
+            android:buttonTint="@color/splashcolor"
             android:text="Tampilkan Password" />
 
     </LinearLayout>

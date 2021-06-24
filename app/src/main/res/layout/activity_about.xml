@@ -18,6 +18,8 @@
         android:adjustViewBounds="true"
         android:src="@drawable/logopolindra" />
     </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -31,6 +33,7 @@
         android:textSize="14sp"
         android:layout_marginTop="20dp"
         android:text="Aplikasi Survey Kepuasan Layanan Mahasiswa"/>
+
         <TextView
             android:fontFamily="@font/font1"
             android:layout_width="wrap_content"
@@ -40,6 +43,8 @@
             android:layout_marginTop="00dp"
             android:text="Di Politeknik Negeri Indramayu"/>
     </LinearLayout>
+
+
     <TextView
         android:id="@+id/title"
         android:layout_marginTop="100dp"
@@ -50,22 +55,56 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
+
+    <Button
+        android:layout_marginTop="125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showData"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="190dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:background="@drawable/box_half_radius_white"
-        android:minHeight="400dp"
-        android:orientation="vertical">
-    </LinearLayout>
+
+
+                <GridLayout
+                    android:layout_marginTop="170dp"
+                    android:id="@+id/gl_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="1">
+
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/cv_profile"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_columnWeight="1"-->
+<!--                        android:layout_rowWeight="1"-->
+<!--                        app:cardElevation="6dp"-->
+<!--                        android:foreground="?android:attr/selectableItemBackground"-->
+<!--                        android:clickable="true"-->
+<!--                        app:cardCornerRadius="12dp"-->
+<!--                        android:layout_margin="12dp">-->
+
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="9dp"
+                                android:id="@+id/rcv_tentang">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+                </GridLayout>
+
     </LinearLayout>
 </RelativeLayout>

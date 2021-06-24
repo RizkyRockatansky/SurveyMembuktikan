@@ -1,7 +1,7 @@
 package app.skripsi.aspinkepumas.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
-import app.skripsi.aspinkepumas.MainActivity;
+import app.skripsi.aspinkepumas.ui.mainactivity.MainActivity;
 import app.skripsi.aspinkepumas.R;
 import app.skripsi.aspinkepumas.api.ApiClient;
 import app.skripsi.aspinkepumas.api.ApiInterface;
