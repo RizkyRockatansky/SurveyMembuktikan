@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:text="Ini Field Pertanyaan"
+            android:id="@+id/nama_pertanyaan"
+            android:fontFamily="@font/font1"
+            android:textSize="20sp"
+            android:layout_height="60dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:editable="false"
+            android:layout_margin="8dp"
+            android:text="#Tengible"
+            android:id="@+id/id_kategori"
+            android:layout_height="wrap_content"/>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:id="@+id/nama_kategori"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_perntanyaan"
+            android:layout_margin="8dp"
+            android:editable="false"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/rb_1"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai Jawaban 1"
+                android:buttonTint="@color/splashcolor"/>
+
+            <RadioButton android:id="@+id/rb_2"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai Jawaban 2"
+                android:buttonTint="@color/splashcolor"/>
+
+            <RadioButton android:id="@+id/rb_3"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai Jawaban 3"
+                android:buttonTint="@color/splashcolor"/>
+
+            <RadioButton android:id="@+id/rb_4"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai Jawaban 4"
+                android:buttonTint="@color/splashcolor"/>
+
+            <RadioButton android:id="@+id/rb_5"
+                android:layout_marginLeft="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilai Jawaban 5 "
+                android:buttonTint="@color/splashcolor"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

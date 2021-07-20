@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Aspinkepumas</string>
+    <string name="app_name">E-Survey PKM</string>
 
     <string name="tentang_kami"> Aplikasi Penilaian Kepuasan Layanan Mahasiswa dibangun untuk mengukur tingkat kepuasan mahasiswa terhadap layanan yang diberikan oleh kampus. Setiap mahasiswa tentunya ingin mendapatkan kualitas pelayanan pendidikan yang optimal dan sesuai dengan harapan mahasiswa. Oleh karena itu, perlu dilakukan pengukuran untuk mengetahui seberapa besar tingkat puasatau tidaknya mahasiswa terhadap kualitas layanan pendidikan yang diberikan oleh pihak kampus.</string>
+
+    <string name="kuisioner_tag">Silahkan Beri Penilaian Kepuasan Anda Terhadap Layanan Kampus Di Politeknik Negeri Indramayu </string>
+
 </resources>

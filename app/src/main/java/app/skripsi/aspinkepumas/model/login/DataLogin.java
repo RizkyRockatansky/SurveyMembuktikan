@@ -10,8 +10,8 @@ public class DataLogin {
 	@SerializedName("nama")
 	private String nama;
 
-	@SerializedName("id")
-	private String id;
+	@SerializedName("id_pengguna")
+	private String id_pengguna;
 
 	public void setNim(String nim){
 		this.nim = nim;
@@ -30,10 +30,10 @@ public class DataLogin {
 	}
 
 	public void setId(String id){
-		this.id = id;
+		this.id_pengguna = id_pengguna;
 	}
 
 	public String getId(){
-		return id;
+		return id_pengguna;
 	}
 }
