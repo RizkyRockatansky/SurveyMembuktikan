@@ -13,35 +13,53 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
+        <EditText
+            android:layout_width="match_parent"
+            android:text="#1"
+            android:background="#FFF"
+            android:fontFamily="@font/font1"
+            android:id="@+id/et_id_perntanyaan"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            android:inputType="none"
+            android:editable="false"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_margin="8dp"
             android:text="Ini Field Pertanyaan"
-            android:id="@+id/nama_pertanyaan"
+            android:id="@+id/tv_nama_pertanyaan"
             android:fontFamily="@font/font1"
             android:textSize="20sp"
             android:layout_height="60dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:text="Tengible"
+            android:id="@+id/tv_nama_kategori"
+            android:fontFamily="@font/font1"
+            android:layout_height="wrap_content"/>
+
 
         <EditText
             android:layout_width="match_parent"
+            android:fontFamily="@font/font1"
             android:editable="false"
             android:layout_margin="8dp"
-            android:text="#Tengible"
-            android:id="@+id/id_kategori"
-            android:layout_height="wrap_content"/>
+            android:background="#FFF"
+            android:id="@+id/et_id_kategori"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
 <!--        <TextView-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_margin="8dp"-->
 <!--            android:id="@+id/nama_kategori"-->
 <!--            android:layout_height="wrap_content"/>-->
 
-        <EditText
-            android:layout_width="match_parent"
-            android:id="@+id/id_perntanyaan"
-            android:layout_margin="8dp"
-            android:editable="false"
-            android:layout_height="wrap_content"/>
 
         <RadioGroup
             android:layout_width="match_parent"

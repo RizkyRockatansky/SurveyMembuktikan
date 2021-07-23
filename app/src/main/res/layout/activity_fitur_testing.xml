@@ -26,9 +26,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="9dp"
-            android:id="@+id/rcv_pertanyaan">
+            android:id="@+id/recv_pertanyaan">
 
         </androidx.recyclerview.widget.RecyclerView>
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:editable="false"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:text="#Tengible"-->
+<!--            android:id="@+id/id_kategori"-->
+<!--            android:background="#FFF"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none"/>-->
 
         <Button
             android:id="@+id/submit_kuisioner"

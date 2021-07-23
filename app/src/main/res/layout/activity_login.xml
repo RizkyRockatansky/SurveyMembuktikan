@@ -129,6 +129,8 @@
             android:buttonTint="@color/splashcolor"
             android:text="Tampilkan Password" />
 
+
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -158,6 +160,17 @@
         android:text="Login"
         android:textColor="#ffffff"
         android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="LUPA PASSWORD?"
+            android:textColor="#1566e0"
+            android:textSize="10.5sp"/>
     </LinearLayout>
     </LinearLayout>
 
