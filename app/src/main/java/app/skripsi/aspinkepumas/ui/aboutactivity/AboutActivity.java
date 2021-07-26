@@ -41,9 +41,7 @@ public class AboutActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-    }
 
-    public void showData(View view){
 
         apiInterface = ApiClient.getClient().create(ApiInterface.class);
 

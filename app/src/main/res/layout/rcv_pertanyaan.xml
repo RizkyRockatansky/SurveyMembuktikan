@@ -29,15 +29,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_margin="8dp"
+            android:textColor="@color/black"
             android:text="Ini Field Pertanyaan"
             android:id="@+id/tv_nama_pertanyaan"
             android:fontFamily="@font/font1"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_height="60dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_margin="8dp"
+            android:textSize="12sp"
             android:text="Tengible"
             android:id="@+id/tv_nama_kategori"
             android:fontFamily="@font/font1"
@@ -49,6 +51,7 @@
             android:fontFamily="@font/font1"
             android:editable="false"
             android:layout_margin="8dp"
+            android:textColor="@color/white"
             android:background="#FFF"
             android:id="@+id/et_id_kategori"
             android:layout_height="wrap_content"
@@ -70,35 +73,35 @@
                 android:layout_marginLeft="13dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nilai Jawaban 1"
+                android:text="Tidak Puas"
                 android:buttonTint="@color/splashcolor"/>
 
             <RadioButton android:id="@+id/rb_2"
                 android:layout_marginLeft="13dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nilai Jawaban 2"
+                android:text="Kurang Puas"
                 android:buttonTint="@color/splashcolor"/>
 
             <RadioButton android:id="@+id/rb_3"
                 android:layout_marginLeft="13dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nilai Jawaban 3"
+                android:text="Cukup Puas"
                 android:buttonTint="@color/splashcolor"/>
 
             <RadioButton android:id="@+id/rb_4"
                 android:layout_marginLeft="13dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nilai Jawaban 4"
+                android:text="Puas"
                 android:buttonTint="@color/splashcolor"/>
 
             <RadioButton android:id="@+id/rb_5"
                 android:layout_marginLeft="13dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nilai Jawaban 5 "
+                android:text="Sangat Puas "
                 android:buttonTint="@color/splashcolor"/>
 
         </RadioGroup>
