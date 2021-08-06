@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import app.skripsi.aspinkepumas.R;
 import app.skripsi.aspinkepumas.adapter.PertanyaanAdapter;
 import app.skripsi.aspinkepumas.api.ApiClient;
+import app.skripsi.aspinkepumas.api.ApiClientDua;
 import app.skripsi.aspinkepumas.api.ApiInterface;
 import app.skripsi.aspinkepumas.model.pertanyaan.DataPertanyaan;
 import app.skripsi.aspinkepumas.model.tentang.DataTentang;
@@ -20,6 +21,7 @@ import retrofit2.Retrofit;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.RadioButton;
 
 import java.util.ArrayList;
 
@@ -40,7 +42,7 @@ public class FiturTesting extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
 
-        apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        apiInterface = ApiClientDua.getClient().create(ApiInterface.class);
 
         Call<ArrayList<DataPertanyaan>> callPertanyaan = apiInterface.PertanyaanResponse();
 
@@ -74,4 +76,31 @@ public class FiturTesting extends AppCompatActivity {
                  }
             });
         }
+
+//        public void RadioButtonClicked(View view){
+//        String jawabanHarapan ="";
+//        boolean checked = ((RadioButton) view).isChecked();
+//        switch (view.getId()){
+//            case R.id.nilai_harapan_1:
+//                if (checked)
+//                    jawabanHarapan = "1";
+//                break;
+//            case R.id.nilai_harapan_2:
+//                if (checked)
+//                    jawabanHarapan = "2";
+//                break;
+//            case R.id.nilai_harapan_3:
+//                if (checked)
+//                    jawabanHarapan = "3";
+//                break;
+//            case R.id.nilai_harapan_4:
+//                if (checked)
+//                    jawabanHarapan = "4";
+//                break;
+//            case R.id.nilai_harapan_5:
+//                if (checked)
+//                    jawabanHarapan = "5";
+//                break;
+//        }
+//        }
     }

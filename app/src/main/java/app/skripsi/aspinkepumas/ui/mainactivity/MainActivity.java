@@ -7,6 +7,7 @@ import app.skripsi.aspinkepumas.session.SessionManager;
 import app.skripsi.aspinkepumas.testingfitur.FiturTesting;
 import app.skripsi.aspinkepumas.ui.aboutactivity.AboutActivity;
 import app.skripsi.aspinkepumas.ui.grafik.GrafikActivity;
+import app.skripsi.aspinkepumas.ui.historykuesioner.HistoryKuesioner;
 import app.skripsi.aspinkepumas.ui.kuisioner.KuisionerActivity;
 import app.skripsi.aspinkepumas.ui.login.LoginActivity;
 
@@ -36,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewDate = findViewById(R.id.tv_tanggal);
         textViewDate.setText(currentDate);
 
-        CardView grafik = findViewById(R.id.cv_grafik);
-        grafik.setOnClickListener(new View.OnClickListener() {
+        CardView history = findViewById(R.id.cv_history);
+        history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ii = new Intent(getApplicationContext(), GrafikActivity.class);
+                Intent ii = new Intent(getApplicationContext(), HistoryKuesioner.class);
                 startActivity(ii);
 
             }

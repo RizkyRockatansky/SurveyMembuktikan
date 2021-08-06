@@ -12,39 +12,56 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
+import java.util.List;
+
+public class LoginActivity extends AppCompatActivity  implements View.OnClickListener {
 
     private CheckBox ShowPass;
     EditText nimLogin, passLogin;
+    private Spinner sp;
     TextView btnlogin;
+    private ProgressDialog pd;
     ProgressDialog progressDialog;
-    String loginnim, loginpassword;
+
+    String loginnim, loginpassword, loginrole;
     ApiInterface apiInterface;
     SessionManager sessionManager;
-
-
+    private int status = 0;
+    Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         //initials
         nimLogin = findViewById(R.id.loginnim);
         passLogin = findViewById(R.id.loginpass);
         ShowPass = findViewById(R.id.showPass);
         btnlogin = findViewById(R.id.login_btn);
+
         ShowPass.setOnClickListener(this);
 
         //progressdialog
@@ -64,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 loginnim = nimLogin.getText().toString();
                 loginpassword = passLogin.getText().toString();
                 login(loginnim,loginpassword);
-             break;
+                break;
 
             case R.id.showPass:
                 showpass();

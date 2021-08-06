@@ -165,12 +165,12 @@
                         android:textColor="#000"
                         android:textSize="15sp"
                         android:layout_marginTop="5dp"
-                        android:text="    isi kuisioner  "/>
+                        android:text="       isi kuisioner  "/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_grafik"
+                android:id="@+id/cv_history"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -191,7 +191,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/chart"/>
+                        android:src="@drawable/history"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -199,7 +199,7 @@
                         android:textColor="#000"
                         android:textSize="15sp"
                         android:layout_marginTop="5dp"
-                        android:text="Grafik Analisis"/>
+                        android:text="History kuesioner"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

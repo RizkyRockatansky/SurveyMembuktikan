@@ -36,16 +36,25 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:textSize="12sp"
+                    android:text="P01"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_kode_kuis"
+                    android:fontFamily="@font/font1"
+                    android:layout_height="wrap_content"/>
+
         <EditText
             android:layout_width="match_parent"
             android:text="#1"
             android:background="#FFF"
             android:fontFamily="@font/font1"
             android:id="@+id/et_id_perntanyaan"
-            android:textSize="20sp"
-            android:layout_margin="8dp"
             android:inputType="none"
             android:editable="false"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"/>
 
         <TextView
@@ -172,6 +181,7 @@
                     android:text="Harapan"/>
 
                 <RadioGroup
+                    android:id="@+id/rg_harapan"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:orientation="vertical">
@@ -181,6 +191,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tidak Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_2"
@@ -188,6 +199,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kurang Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_3"
@@ -195,13 +207,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cukup Puas"
-                        android:buttonTint="@color/splashcolor"/>
+                        android:buttonTint="@color/splashcolor"
+                        android:onClick="RadioButtonClicked"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_4"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_5"
@@ -209,6 +223,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sangat Puas "
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                 </RadioGroup>
@@ -241,6 +256,7 @@
                     android:text="Kenyataan"/>
 
                 <RadioGroup
+                    android:id="@+id/rg_kenyataan"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:orientation="vertical">
@@ -250,6 +266,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tidak Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_kenyataan_2"
@@ -257,6 +274,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kurang Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_kenyataan_3"
@@ -264,6 +282,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cukup Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_kenyataan_4"
@@ -271,6 +290,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Puas"
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_kenyataan_5"
@@ -278,6 +298,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sangat Puas "
+                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                 </RadioGroup>

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import app.skripsi.aspinkepumas.R;
 import app.skripsi.aspinkepumas.adapter.TentangAdapter;
 import app.skripsi.aspinkepumas.api.ApiClient;
+import app.skripsi.aspinkepumas.api.ApiClientDua;
 import app.skripsi.aspinkepumas.api.ApiInterface;
 import app.skripsi.aspinkepumas.model.tentang.DataTentang;
 import retrofit2.Call;
@@ -43,7 +44,7 @@ public class AboutActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
 
-        apiInterface = ApiClient.getClient().create(ApiInterface.class);
+        apiInterface = ApiClientDua.getClient().create(ApiInterface.class);
 
          Call<ArrayList<DataTentang>> callTentang = apiInterface.TentangResponse();
 

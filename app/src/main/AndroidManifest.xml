@@ -12,7 +12,10 @@
         android:roundIcon="@drawable/logopolindra"
         android:supportsRtl="true"
         android:theme="@style/Theme.Aspinkepumas">
-        <activity android:name=".ui.login.LoginActivityManagement"></activity>
+        <activity android:name=".ui.hasilkuesioner.HasilKuesioner"></activity>
+        <activity android:name=".ui.historykuesioner.HistoryKuesioner" />
+        <activity android:name=".ui.landingpage.LandingPageLogin" />
+        <activity android:name=".ui.login.LoginActivityManagement" />
         <activity android:name=".ui.mainactivitymanagement.MainActivityManagement" />
         <activity android:name=".testingfitur.FiturTesting" />
         <activity android:name=".ui.kuisioner.KuisionerActivity" />

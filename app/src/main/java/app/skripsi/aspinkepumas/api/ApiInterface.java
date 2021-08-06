@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import app.skripsi.aspinkepumas.model.kuisioner.DataKuisioner;
 import app.skripsi.aspinkepumas.model.login.Login;
+import app.skripsi.aspinkepumas.model.login.LoginAdmin;
 import app.skripsi.aspinkepumas.model.pertanyaan.DataPertanyaan;
 import app.skripsi.aspinkepumas.model.tentang.DataTentang;
 import retrofit2.Call;
@@ -21,6 +22,7 @@ public interface ApiInterface {
     Call<Login> LoginResponse(
             @Field("nim") String nim,
             @Field("password") String password
+//            @Field("role") int role
 
     );
     @GET("login/tentang.php")
@@ -35,6 +37,12 @@ public interface ApiInterface {
 
     );
 
+    @FormUrlEncoded
+    @POST("login/loginadmin.php")
+    Call<LoginAdmin>LoginAdminResponse(
+            @Field("email") String email,
+            @Field("password") String password
+    );
     //Input Soal
 
 

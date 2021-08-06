@@ -1,6 +1,7 @@
 package app.skripsi.aspinkepumas.ui.splashscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import app.skripsi.aspinkepumas.ui.landingpage.LandingPageLogin;
 import app.skripsi.aspinkepumas.ui.mainactivity.MainActivity;
 import app.skripsi.aspinkepumas.R;
 
@@ -18,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent home = new Intent(SplashScreen.this, MainActivity.class);
+                Intent home = new Intent(SplashScreen.this, LandingPageLogin.class);
                 startActivity(home);
                 finish();
             }

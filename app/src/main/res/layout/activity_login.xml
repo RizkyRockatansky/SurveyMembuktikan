@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="62dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="62dp"
             android:background="@drawable/blue_border_rounded_cornwe">
 
@@ -119,16 +119,25 @@
 
         </RelativeLayout>
 
+
+<!--        <Spinner-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:id="@+id/spinnerStatus"-->
+<!--            android:backgroundTint="@color/splashcolor"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="40dp">-->
+<!--        </Spinner>-->
         <CheckBox
             android:id="@+id/showPass"
-            android:layout_marginTop="10dp"
             android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:textColor="@color/splashcolor"
             android:layout_gravity="center"
             android:buttonTint="@color/splashcolor"
             android:text="Tampilkan Password" />
-
 
 
     </LinearLayout>
