@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import app.skripsi.aspinkepumas.R;
 import app.skripsi.aspinkepumas.session.SessionManager;
+import app.skripsi.aspinkepumas.testingfitur.InsertTesting;
 import app.skripsi.aspinkepumas.ui.aboutactivity.AboutActivity;
 import app.skripsi.aspinkepumas.ui.grafik.GrafikActivity;
 import app.skripsi.aspinkepumas.ui.hasilkuesioner.HasilKuesioner;
@@ -61,7 +62,7 @@ public class MainActivityManagement extends AppCompatActivity {
         hasilkuesioner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent iiii = new Intent(getApplicationContext(), HasilKuesioner.class);
+                Intent iiii = new Intent(getApplicationContext(), InsertTesting.class);
                 startActivity(iiii);
             }
         });

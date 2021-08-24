@@ -16,16 +16,16 @@ public class SessionManager {
     private SharedPreferences.Editor editor;
 
     public static final String IS_LOGGED_IN = "isLoggedIn";
-    public static final String ID = "id_mahasiswa";
+    public static final String ID = "id_mhs";
     public static final String NIM = "nim";
-    public static final String NAMA = "nama";
+    public static final String NAMA = "nama_mhs";
     public static final String EMAIL = "email";
 
 //    public static final  String ROLE = "role";
 
     public static final String IDAD = "id_admin";
     public static final String EMAILING = "email";
-    public static final String NAMAA = "nama";
+    public static final String NAMAA = "nama_admin";
 
 
     public SessionManager(Context context) {

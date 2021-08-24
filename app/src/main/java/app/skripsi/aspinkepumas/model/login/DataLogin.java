@@ -10,17 +10,16 @@ public class DataLogin {
 	@SerializedName("password")
 	private String password;
 
-	@SerializedName("nama")
+	@SerializedName("nama_mhs")
 	private String nama;
 
-	@SerializedName("id_mahasiswa")
-	private String id_mahasiswa;
+	@SerializedName("id_mhs")
+	private String idmahasiswa;
 
 	@SerializedName("email")
 	private String email;
 
-	@SerializedName("role")
-	private int  role;
+
 
 	public void setNim(String nim){
 		this.nim = nim;
@@ -47,13 +46,13 @@ public class DataLogin {
 		return nama;
 	}
 
-	public void setId(String id){
-		this.id_mahasiswa = id_mahasiswa;
+	public void setId(String idmahasiswa){
+		this.idmahasiswa = idmahasiswa;
 	}
 
 
 	public String getId(){
-		return id_mahasiswa;
+		return idmahasiswa;
 	}
 
 	public void setEmai(String email){
@@ -65,13 +64,7 @@ public class DataLogin {
 	}
 
 
-	public void setRole(int role){
-		this.role = role;
-	}
 
-	public int getRole(){
-		return role;
-	}
 
 //	public void doLogin(String nim,  String password, int status){
 //		this.setNim(nim);

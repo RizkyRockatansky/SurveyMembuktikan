@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".testingfitur.InsertTesting">
+
+  <EditText
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="id_mahasiswa"
+      android:id="@+id/et_id_mhs"/>
+    <EditText
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="id_periode"
+        android:id="@+id/et_id_periode"/>
+    <EditText
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="id_kuis"
+        android:id="@+id/et_id_kuis"/>
+    <EditText
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="harapan"
+        android:id="@+id/et_jawaban_har"/>
+
+    <EditText
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="persepsi"
+        android:id="@+id/et_jawaban_per"/>
+
+<!--    <Button-->
+<!--        android:backgroundTint="@color/splashcolor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/btn_submit">-->
+
+<!--    </Button>-->
+
+
+
+
+
+</LinearLayout>

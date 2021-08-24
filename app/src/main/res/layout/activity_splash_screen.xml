@@ -8,6 +8,8 @@
     android:background="@color/splashcolor"
     tools:context=".ui.splashscreen.SplashScreen">
 
+
+
     <ImageView
         android:layout_marginTop="200dp"
         android:layout_width="180dp"
@@ -47,6 +49,8 @@
         android:textStyle="bold"
         android:textAllCaps="true"
         android:textColor="#ffffff" />
+
+
 
 
 

@@ -60,7 +60,7 @@ public class AboutActivity extends AppCompatActivity {
 
                 }
             for (DataTentang av: response.body()){
-                Log.i("Tentang", av.getJudul());
+//                Log.i("Tentang", av.getJudul());
                 Log.i("Deskripsi", av.getDeskripsi());
                 Log.i("id", av.getId_tentang());
 

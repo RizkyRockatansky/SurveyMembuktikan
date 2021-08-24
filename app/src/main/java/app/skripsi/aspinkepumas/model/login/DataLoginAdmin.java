@@ -10,7 +10,7 @@ public class DataLoginAdmin {
     @SerializedName("password")
     private String password;
 
-    @SerializedName("nama")
+    @SerializedName("nama_admin")
     private String nama;
 
     @SerializedName("id_admin")

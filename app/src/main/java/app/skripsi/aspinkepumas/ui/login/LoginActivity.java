@@ -72,6 +72,8 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
         //this
 
         btnlogin.setOnClickListener(this);
+
+//        Toast.makeText(LoginActivity.this, response.body().getDataLogin().getId(), Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -115,10 +117,13 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
                     DataLogin dataLogin = response.body().getDataLogin();
                     sessionManager.createLoginSession(dataLogin);
 
-                    Toast.makeText(LoginActivity.this, response.body().getDataLogin().getNama(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, response.body().getDataLogin().getNama(), Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                    Bundle extras = new Bundle();
+//                    extras.putString("key", String.valueOf(response));
+//                    intent.putExtras(extras);
                     startActivity(intent);
-                    finish();
+
                 }else {
                     progressDialog.dismiss();
                     Toast.makeText(LoginActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();

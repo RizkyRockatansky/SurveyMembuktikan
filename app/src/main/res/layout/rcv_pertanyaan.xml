@@ -30,6 +30,8 @@
             android:clickable="true"
             app:cardCornerRadius="12dp"
             android:layout_margin="12dp">
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,15 +48,24 @@
                     android:fontFamily="@font/font1"
                     android:layout_height="wrap_content"/>
 
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:text="#1"-->
+<!--                    android:background="#FFF"-->
+<!--                    android:fontFamily="@font/font1"-->
+<!--                    android:id="@+id/edit_id_mahasiswa"-->
+<!--                    android:editable="false"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
         <EditText
+
             android:layout_width="match_parent"
             android:text="#1"
             android:background="#FFF"
+            android:textColor="@color/white"
             android:fontFamily="@font/font1"
             android:id="@+id/et_id_perntanyaan"
-            android:inputType="none"
             android:editable="false"
-            android:textColor="@color/white"
             android:layout_height="wrap_content"/>
 
         <TextView
@@ -77,74 +88,20 @@
             android:layout_height="wrap_content"/>
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:fontFamily="@font/font1"
-            android:editable="false"
-            android:textColor="@color/white"
-            android:background="#FFF"
-            android:id="@+id/et_id_kategori"
-            android:layout_height="wrap_content"
-            android:inputType="none"/>
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:fontFamily="@font/font1"-->
+<!--            android:editable="false"-->
+<!--            android:background="#FFF"-->
+<!--            android:id="@+id/et_id_kategori"-->
+<!--            android:layout_height="wrap_content" />-->
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_margin="8dp"-->
-<!--            android:id="@+id/nama_kategori"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="234dp"-->
-<!--            android:layout_height="174dp"-->
-<!--            android:orientation="vertical">-->
-<!--        <RadioGroup-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="240dp"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <RadioButton android:id="@+id/rb_1"-->
-<!--                android:layout_marginLeft="13dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Tidak Puas"-->
-<!--                android:buttonTint="@color/splashcolor"/>-->
-
-<!--            <RadioButton android:id="@+id/rb_2"-->
-<!--                android:layout_marginLeft="13dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Kurang Puas"-->
-<!--                android:buttonTint="@color/splashcolor"/>-->
-
-<!--            <RadioButton android:id="@+id/rb_3"-->
-<!--                android:layout_marginLeft="13dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Cukup Puas"-->
-<!--                android:buttonTint="@color/splashcolor"/>-->
-
-<!--            <RadioButton android:id="@+id/rb_4"-->
-<!--                android:layout_marginLeft="13dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Puas"-->
-<!--                android:buttonTint="@color/splashcolor"/>-->
-
-<!--            <RadioButton android:id="@+id/rb_5"-->
-<!--                android:layout_marginLeft="13dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Sangat Puas "-->
-<!--                android:buttonTint="@color/splashcolor"/>-->
-
-<!--        </RadioGroup>-->
-<!--  -->
     </GridLayout>
 
     <GridLayout
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="190dp"
         android:id="@+id/GL1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -181,7 +138,7 @@
                     android:text="Harapan"/>
 
                 <RadioGroup
-                    android:id="@+id/rg_harapan"
+                    android:id="@+id/rgp_harapan"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:orientation="vertical">
@@ -191,15 +148,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tidak Puas"
-                        android:onClick="RadioButtonClicked"
-                        android:buttonTint="@color/splashcolor"/>
+                        android:buttonTint="@color/splashcolor"
+                        />
 
                     <RadioButton android:id="@+id/nilai_harapan_2"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kurang Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_3"
@@ -207,15 +163,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cukup Puas"
-                        android:buttonTint="@color/splashcolor"
-                        android:onClick="RadioButtonClicked"/>
+                        android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_4"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                     <RadioButton android:id="@+id/nilai_harapan_5"
@@ -223,7 +177,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sangat Puas "
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                 </RadioGroup>
@@ -231,7 +184,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/kenyataan"
+            android:id="@+id/persepsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
@@ -253,52 +206,47 @@
                     android:textColor="#000"
                     android:textSize="15sp"
                     android:layout_marginTop="5dp"
-                    android:text="Kenyataan"/>
+                    android:text="Persepsi"/>
 
                 <RadioGroup
-                    android:id="@+id/rg_kenyataan"
+                    android:id="@+id/rgp_persepsi"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
                     android:orientation="vertical">
 
-                    <RadioButton android:id="@+id/nilai_kenyataan_1"
+                    <RadioButton android:id="@+id/nilai_presepsi_1"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tidak Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
-                    <RadioButton android:id="@+id/nilai_kenyataan_2"
+                    <RadioButton android:id="@+id/nilai_presepsi2"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Kurang Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
-                    <RadioButton android:id="@+id/nilai_kenyataan_3"
+                    <RadioButton android:id="@+id/nilai_presepsi_3"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cukup Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
-                    <RadioButton android:id="@+id/nilai_kenyataan_4"
+                    <RadioButton android:id="@+id/nilai_presepsi_4"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Puas"
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
-                    <RadioButton android:id="@+id/nilai_kenyataan_5"
+                    <RadioButton android:id="@+id/nilai_presepsi_5"
                         android:layout_marginLeft="13dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Sangat Puas "
-                        android:onClick="RadioButtonClicked"
                         android:buttonTint="@color/splashcolor"/>
 
                 </RadioGroup>

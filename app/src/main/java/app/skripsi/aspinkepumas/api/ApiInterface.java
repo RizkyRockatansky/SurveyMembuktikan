@@ -4,7 +4,10 @@ package app.skripsi.aspinkepumas.api;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import app.skripsi.aspinkepumas.model.histori.HistoriData;
+import app.skripsi.aspinkepumas.model.inserttesting.DataInsertTesting;
 import app.skripsi.aspinkepumas.model.kuisioner.DataKuisioner;
 import app.skripsi.aspinkepumas.model.login.Login;
 import app.skripsi.aspinkepumas.model.login.LoginAdmin;
@@ -32,7 +35,7 @@ public interface ApiInterface {
 
     //Fetch Soal From database
 
-    @GET("login/pertanyaan.php")
+    @GET("login/kuisioner.php")
     Call<ArrayList<DataPertanyaan>>PertanyaanResponse(
 
     );
@@ -43,7 +46,29 @@ public interface ApiInterface {
             @Field("email") String email,
             @Field("password") String password
     );
-    //Input Soal
+
+
+    //testtambahdata
+
+    @FormUrlEncoded
+    @POST("login/crud.php")
+    Call<DataInsertTesting>InsertResponse(
+            @Field("id_mahasiswa") String id_mahasiswa,
+            @Field("id_periode") String id_periode,
+            @Field("id_kuis") String id_kuis,
+            @Field("jawaban_presepsi") String jawaban_presepsi,
+            @Field("jawaban_harapan") String jawaban_harapan
+
+
+
+            );
+        @FormUrlEncoded
+    @POST("login/history.php")
+    Call<List<HistoriData>> HistoriResponse(
+            @Field("id_mhs") String id_mhs
+        );
+
+
 
 
 }

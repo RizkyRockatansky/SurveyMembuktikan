@@ -4,12 +4,12 @@ import com.google.gson.annotations.SerializedName;
 
 public class DataPertanyaan {
 
-    @SerializedName("id_pertanyaan")
-    private String id_pertanyaan;
+    @SerializedName("id_kuis")
+    private String id_kuis;
 
 
-    @SerializedName("nama_pertanyaan")
-    private String nama_pertanyaan;
+    @SerializedName("pertanyaan")
+    private String pertanyaan;
 
     @SerializedName("id_kategori")
     private String id_kategori;
@@ -17,13 +17,15 @@ public class DataPertanyaan {
     @SerializedName("nama_kategori")
     private String nama_kategori;
 
+    @SerializedName("kode_kuis")
+    private String kode_kuis;
 
     public String getId_pertanyaan() {
-        return id_pertanyaan;
+        return id_kuis;
     }
 
     public String getNama_pertanyaan() {
-        return nama_pertanyaan;
+        return pertanyaan;
     }
 
     public String getId_kategori() {
@@ -34,13 +36,19 @@ public class DataPertanyaan {
         return nama_kategori;
     }
 
+    public String getKodeKuis() {
+        return kode_kuis;
+    }
+
     @Override
     public String toString() {
         return "DataPertanyaan{" +
-                "id_pertanyaan='" + id_pertanyaan + '\'' +
-                ", nama_pertanyaan='" + nama_pertanyaan + '\'' +
+                "id_kuis='" + id_kuis + '\'' +
+                ", pertanyaan='" + pertanyaan + '\'' +
                 ", id_kategori='" + id_kategori + '\'' +
                 ", nama_kategori='" + nama_kategori + '\'' +
+                ", kode_kuis='" + kode_kuis + '\'' +
+
                 '}';
     }
 

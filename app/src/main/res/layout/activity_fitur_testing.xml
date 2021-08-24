@@ -14,12 +14,30 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/kuisioner_tag"
         android:gravity="center"
         android:fontFamily="@font/font1"
         android:textSize="15sp"
         android:textColor="@color/black"
         />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kuisioner_tag"
+            android:gravity="center"
+            android:fontFamily="@font/font1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+<!--        <EditText-->
+<!--            android:id="@+id/et_id_mahasiswa"-->
+<!--            android:text="aaaaaaaaaaa"-->
+<!--            android:editable="false"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            />-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="40dp"
@@ -30,18 +48,10 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:editable="false"-->
-<!--            android:layout_margin="8dp"-->
-<!--            android:text="#Tengible"-->
-<!--            android:id="@+id/id_kategori"-->
-<!--            android:background="#FFF"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:inputType="none"/>-->
+
 
         <Button
-            android:id="@+id/submit_kuisioner"
+            android:id="@+id/btn_submit_kuisioner"
             android:layout_width="170dp"
             android:layout_height="55dp"
             android:layout_gravity="center"

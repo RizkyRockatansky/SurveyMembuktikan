@@ -34,7 +34,7 @@ public class TentangAdapter extends RecyclerView.Adapter<TentangAdapter.MyViewHo
     public void onBindViewHolder(@NonNull TentangAdapter.MyViewHolder holder, int position) {
        DataTentang dataTentang = dataTentangs.get(position);
 
-        holder.judul.setText(dataTentang.getJudul());
+//        holder.judul.setText(dataTentang.getJudul());
         holder.deskripsi.setText(dataTentang.getDeskripsi());
 
     }
@@ -46,14 +46,14 @@ public class TentangAdapter extends RecyclerView.Adapter<TentangAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView judul;
+//        TextView judul;
         TextView deskripsi;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            judul = itemView.findViewById(R.id.tv_judul);
+//            judul = itemView.findViewById(R.id.tv_judul);
             deskripsi = itemView.findViewById(R.id.tv_deskripsi);
         }
     }

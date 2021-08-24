@@ -11,12 +11,12 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="5dp">
-    <ImageView
-        android:id="@+id/bg_dashboard"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/logopolindra" />
+        <ImageView
+            android:id="@+id/bg_dashboard"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logopolindra" />
     </LinearLayout>
 
     <LinearLayout
@@ -24,14 +24,14 @@
         android:layout_height="100dp"
         android:layout_marginLeft="100dp"
         android:orientation="vertical">
-    <TextView
-        android:fontFamily="@font/font1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:layout_marginTop="20dp"
-        android:text="Aplikasi Survey Kepuasan Layanan Mahasiswa"/>
+        <TextView
+            android:fontFamily="@font/font1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:text="Aplikasi Survey Kepuasan Layanan Mahasiswa"/>
 
         <TextView
             android:fontFamily="@font/font1"

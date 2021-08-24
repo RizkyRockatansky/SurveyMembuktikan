@@ -21,6 +21,8 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
     SessionManager sessionManager;
+    TextView IDM;
+    String id_mhs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         if (!sessionManager.isLoggedIn()){
             moveToLogin();
         }
+
+//        String value = getIntent().getExtras().getString("key");
+
+//        id_mhs = sessionManager.getUserDetail().get(SessionManager.ID);
+//
+//        IDM = findViewById(R.id.tv_id_mahasiswa);
+//
+//        IDM.setText(id_mhs);
+
+
         Calendar calendar = Calendar.getInstance();
         String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
 
